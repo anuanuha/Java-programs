@@ -1,6 +1,6 @@
 package swapnumber;
 import java.util.Scanner;
-public class mulofaddnum{
+public class countevennumber {
 	public static void main(String[] args) {
 	Scanner sc=new Scanner(System.in);
 	System.out.println("enter the num");
@@ -9,17 +9,17 @@ public class mulofaddnum{
 	System.out.println(res);
 	}
 	public static int sumofnum(int num) {
-		int sum=1;
+		int count=0;
 		while(num!=0) 
 		{
 			int rem=num%10;//gives remainder
-			if(rem%2!=0)
+			if(rem%2==0)
 			{
-			sum=sum*rem;
-			
+			count++;	
 		}
 			num=num/10;//gives quotient
 	}
-		return sum;
+		return count;
 }
 }
+	
